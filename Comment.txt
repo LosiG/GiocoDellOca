@@ -1,0 +1,5 @@
+Allora, per prima cosa vi propongo di leggervi bene il gioco e/o provare a giocarci. 
+Si vede benissimo che non avete le idee chiare su di esso. 
+Direi che il punto fondamentale è che le caselle NON SONO TUTTE uguali, se guardate ci sono le caselle con le oche, caselle trappola e via dicendo. 
+"muovi" mi sembra  che non sia chiara cosa deva fare....secondo me fa troppo, a occhio, oppure deve sapere troppe cose che non sa. 
+Provate a stabilire bene le responsabilità di ogni oggetto a parole, poi ne riparliamo . Direi mancano almeno due classi
