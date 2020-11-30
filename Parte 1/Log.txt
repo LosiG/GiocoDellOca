@@ -2,3 +2,4 @@ Log delle chiamate di gruppo:
 
 Martedì 24 Novembre : ore 8 -> 9		Assente: Razzoli 		Argomento: Creazione UML 
 Mercoledì 25 Novembre : ore 10:00 -> 11:30	Assente: 			Argomento: Revisione UML + Creazione "Organizzazione.odt" 
+Lunedì 30 Novembre : Ore 9 -> 10 		Assente: 			Argomento: Costruzione codice (Separazione a coppie)

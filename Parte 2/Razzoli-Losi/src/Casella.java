@@ -1,9 +1,8 @@
-
+//Gestore ha la responsabilità di attivare le caselle in base al tipo
 public class Casella {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	private String tipo;	
 
-	}
-
+	String getTipo(){return tipo;}
+	void setTipo(String a){tipo = a;}
 }
