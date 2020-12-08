@@ -16,14 +16,21 @@ public class main {
 		 
 		Giocatore giocatori[]= new Giocatore[numGiocatori];
 		Tabellone tabellone = new Tabellone();
-		 
-		for(int i = 1; i<numGiocatori;i++) {
-			 System.out.println("Inserisci nome Giocatore "+i);
-			 giocatori[i].setNome(input.nextLine());
+		
+		for(int y = 0; y<numGiocatori; y++) {
+			giocatori[y] = new Giocatore();
+		}
+		
+		for(int i = 0; i<numGiocatori;i++) {
+		    	 
+			 System.out.println("Inserisci nome Giocatore "+(i+1));
+			 String a = input.nextLine();
+			 giocatori[i].setNome(a);
 			 System.out.println(giocatori[i].getNome() +", inserisci un colore per la pedina" );
 			 giocatori[i].getPedina().setColore(input.nextLine());
 			 
 		 }
+		
 		do {
 			
 			for(int i=0;i<numGiocatori;i++) {
@@ -45,6 +52,7 @@ public class main {
 					if (giocatori[i].getTurno()>0)
 						giocatori[i].setTurno(giocatori[i].getTurno()-1);
 					else
+					    	System.out.println("Posizione attuale "+giocatori[i].getPedina().getPosizione()+ " casella tipo : "+ tabellone.caselle[giocatori[i].getPedina().getPosizione()].getTipo());
 						giocatori[i].muovi();
 						giocatori[i].controllo(tabellone,giocatori[i].getPedina().getPosizione());
 					if(giocatori[i].getPedina().getFine()==true){

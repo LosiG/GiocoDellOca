@@ -1,7 +1,7 @@
 public class Giocatore {
 	
-	private String nomeGiocatore;
-	private Pedina pedina;
+	private String nomeGiocatore="";
+	private Pedina pedina = new Pedina();
 	private int turno = 0;
 	private boolean pozzo=false;
 	
@@ -20,7 +20,7 @@ public class Giocatore {
 	}
 	
 	public void muovi() {
-		pedina.setPosizione(pedina.getPosizione() + lanciaDado()) ;
+		pedina.setPosizione(pedina.getPosizione() + lanciaDado());
 		if (pedina.getPosizione()>63) {
 			pedina.setPosizione(pedina.getPosizione()-63);
 		}

@@ -1,43 +1,40 @@
-<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>450</x><y>310</y><w>210</w><h>190</h></coordinates><panel_attributes>Tabellone
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>33</x><y>240</y><w>210</w><h>90</h></coordinates><panel_attributes>Tabellone
 --
--numGiocatori: int
 -numCaselle[64]: Caselle
 
 --
 
---
-Responsibilities
--- </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>890</x><y>550</y><w>210</w><h>110</h></coordinates><panel_attributes>Dado
---
-
---
-+lancia(): int;
---
-Responsibilities
--- </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>890</x><y>310</y><w>210</w><h>190</h></coordinates><panel_attributes>Giocatore
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>273</x><y>70</y><w>210</w><h>150</h></coordinates><panel_attributes>Giocatore
 --
 -posizione: int
 -nomeGiocatore: String
 -colore: String
 --
-muovi();
++ muovi():void;
++ lanciaDado(): int;
++ controllo​(Tabellone a, int posizione): void;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>473</x><y>130</y><w>180</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>160;60;160;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>33</x><y>360</y><w>210</w><h>70</h></coordinates><panel_attributes>Caselle
 --
-Responsibilities
--- </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>210</y><w>140</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;100;120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>980</x><y>490</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>550</y><w>210</w><h>110</h></coordinates><panel_attributes>Caselle speciali 
+- tipo: String
 --
-# tipo: String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>123</x><y>320</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>533</x><y>190</y><w>210</w><h>80</h></coordinates><panel_attributes>Dado
 --
 
 --
-Responsibilities
--- </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>120</y><w>210</w><h>190</h></coordinates><panel_attributes>Gestore
++lancia(): int;
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>113</x><y>200</y><w>180</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;40;10;10;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>363</x><y>210</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>33</x><y>100</y><w>210</w><h>90</h></coordinates><panel_attributes>Salva_Carica
 --
-- numTurni : Int
--giocatori[4] : Giocatore
+
 --
-+turno()
-+controlloMovimento();
-...
++ stop(): void;
++ salva(): void;
++ carica(): void;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>231</x><y>120</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>273</x><y>280</y><w>210</w><h>100</h></coordinates><panel_attributes>Pedina
 --
-Responsibilities
--- </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>220</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;90;10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>490</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>
+- posizione = 0: int;
+- colore:String;
+- fine=false: boolean;
+--
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,4 +1,3 @@
-
 public class Pedina {
 	
 	private int posizione = 0;
